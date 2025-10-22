@@ -53,5 +53,7 @@ mkdir -p "$USER_SERVICE_DIR"
 cp systemd/battwatch.service "$USER_SERVICE_DIR/battwatch.service"
 systemctl --user daemon-reload
 
-echo "Installation complete! Enable and start with:"
+echo "Installation complete!"
+echo "To run Battwatch, either enable the user-level systemd service:"
 echo "  systemctl --user enable --now battwatch.service"
+echo "or launch it directly in your WM/compositor startup"

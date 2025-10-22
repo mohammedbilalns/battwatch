@@ -4,8 +4,8 @@ from pathlib import Path
 DEFAULT_USER_CONFIG = Path.home() / ".config" / "battwatch" / "config.toml"
 DEFAULT_SYSTEM_CONFIG = Path("/etc/battwatch/config.toml")  # for system-wide
 
-
 def load_config():
+    # Check if config file exists 
     if DEFAULT_USER_CONFIG.exists():
         path = DEFAULT_USER_CONFIG
     elif DEFAULT_SYSTEM_CONFIG.exists():
