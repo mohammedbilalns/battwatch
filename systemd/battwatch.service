@@ -1,0 +1,12 @@
+[Unit]
+Description=Battwatch - Battery Notification Daemon
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/battwatch
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
