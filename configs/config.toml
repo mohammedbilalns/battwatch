@@ -1,0 +1,12 @@
+[daemon]
+poll_interval = 60
+
+[notifications]
+low_threshold = 25
+critical_threshold = 10
+notify_full = true
+
+[messages]
+low = "Battery low: {percent}% remaining"
+critical = "Battery critical: {percent}%! plug in now."
+full = "Battery full: You can unplug the charger"
