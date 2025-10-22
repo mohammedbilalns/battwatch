@@ -75,6 +75,7 @@ After installation, you can run Battwatch in one of two ways:
   low_threshold = 25
   critical_threshold = 10
   notify_full = true
+  full_threshold = 90
 
   [messages]
   low = "Battery low: {percent}% remaining"
